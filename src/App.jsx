@@ -20,80 +20,88 @@ function App() {
       </header>
       <main>
         <section className="section section-intro">
-          <h1>Start your child's educational journey with us</h1>
-          <p>Welcome to Wonder Kids Academy where children's curiousity and imagination are encouraged to blossom through a creative and engaging environment</p>
-          <div className="section-intro__action-btns">
-            <button className="btn btn-primary"><i></i>Enroll your child now</button>
-            <button className="btn btn-secondary"><i></i>Schedule a Tour today</button>
-          </div>
-        </section>
-
-        <section className="section section-features">
-          <div className="feature-title">Discover the trange of enriching programs and curriculum offered at our kindergarten</div>
-          <div className="feature-list">
-            <div className="feature-item">
-              <div className="feature-icon"></div>
-              <div className="feature-content">
-                <h3>Play-Based Learning</h3>
-                <p>Our play-based curriculum fosters children's natural curiousity, creativity and love of learning</p>
-              </div>
-            </div>
-
-            <div className="feature-item">
-              <div className="feature-icon"></div>
-              <div className="feature-content">
-                <h3>Language and Literacy</h3>
-                <p>Our language and literacy program introduces children to the joys of reading, writing and communication</p>
-              </div>
-            </div>
-
-            <div className="feature-item">
-              <div className="feature-icon"></div>
-              <div className="feature-content">
-                <h3>Arts and Culture</h3>
-                <p>We celebrate creativity by introducing children to various forms of art, music and culture from around the world</p>
-              </div>
+          <div className="section-inner">
+            <h1>Start your child's educational journey with us</h1>
+            <p>Welcome to Wonder Kids Academy where children's curiousity and imagination are encouraged to blossom through a creative and engaging environment</p>
+            <div className="action-btns">
+              <button className="btn btn-primary"><i></i>Enroll your child now</button>
+              <button className="btn btn-secondary"><i></i>Schedule a Tour today</button>
             </div>
           </div>
         </section>
 
-        <section className="section section-team">
-          <h2>Meet the staff</h2>
-          <div className="staff-list">
-            <div className="staff">
-              <div className="staff__image"></div>
-              <div className="staff__name">Ms. Sarah</div>
-              <div className="staff__role">Director</div>
-              <div className="staff__intro">Oversees the daily operations of the programme, ensures compliance with safety regulations and manage staff parent and child relationships</div>
-            </div>
+        <section className="section section-features bg-grey">
+          <div className="section-inner">
+            <h2 className="feature-title">Discover the range of enriching programs and curriculum offered at our kindergarten</h2>
+            <div className="feature-list">
+              <div className="feature-item">
+                <div className="feature-icon"></div>
+                <div className="feature-content">
+                  <h3>Play-Based Learning</h3>
+                  <p>Our play-based curriculum fosters children's natural curiousity, creativity and love of learning</p>
+                </div>
+              </div>
 
-            <div className="staff">
-              <div className="staff__image"></div>
-              <div className="staff__name">Ms. Lily</div>
-              <div className="staff__role">Head Teacher</div>
-              <div className="staff__intro">Leads the curriculum development and implementation, supervises the teaching staff, and conducts assessments to track student progress </div>
-            </div>
+              <div className="feature-item">
+                <div className="feature-icon"></div>
+                <div className="feature-content">
+                  <h3>Language and Literacy</h3>
+                  <p>Our language and literacy program introduces children to the joys of reading, writing and communication</p>
+                </div>
+              </div>
 
-            <div className="staff">
-              <div className="staff__image"></div>
-              <div className="staff__name">Mr. John</div>
-              <div className="staff__role">Physical Education Teacher</div>
-              <div className="staff__intro">Designs and delivers physical education programs that promote gross motor skills, coordination, and fitness. Develops games and activities that encourage teamwork </div>
-            </div>
-
-            <div className="staff">
-              <div className="staff__image"></div>
-              <div className="staff__name">Ms Anna</div>
-              <div className="staff__role">Physical Education Teacher</div>
-              <div className="staff__intro">Inspires children to express their creative imagination through a variety of mediums including painting sculpture and mixed media</div>
+              <div className="feature-item">
+                <div className="feature-icon"></div>
+                <div className="feature-content">
+                  <h3>Arts and Culture</h3>
+                  <p>We celebrate creativity by introducing children to various forms of art, music and culture from around the world</p>
+                </div>
+              </div>
             </div>
           </div>
+          
+        </section>
+
+        <section className="section section-staff">
+          <div className="section-inner">
+            <h2>Meet the staff</h2>
+            <div className="staff-list">
+              <div className="staff">
+                <div className="staff__image"></div>
+                <h4 className="staff__name">Ms. Sarah</h4>
+                <h5 className="staff__role">Director</h5>
+                <p className="staff__intro">Oversees the daily operations of the programme, ensures compliance with safety regulations and manage staff parent and child relationships</p>
+              </div>
+
+              <div className="staff">
+                <div className="staff__image"></div>
+                <h4 className="staff__name">Ms. Lily</h4>
+                <h5 className="staff__role">Head Teacher</h5>
+                <p className="staff__intro">Leads the curriculum development and implementation, supervises the teaching staff, and conducts assessments to track student progress </p>
+              </div>
+
+              <div className="staff">
+                <div className="staff__image"></div>
+                <h4 className="staff__name">Mr. John</h4>
+                <h5 className="staff__role">Physical Education Teacher</h5>
+                <p className="staff__intro">Designs and delivers physical education programs that promote gross motor skills, coordination, and fitness. Develops games and activities that encourage teamwork </p>
+              </div>
+
+              <div className="staff">
+                <div className="staff__image"></div>
+                <h4 className="staff__name">Ms Anna</h4>
+                <h5 className="staff__role">Art Teacher</h5>
+                <p className="staff__intro">Inspires children to express their creative imagination through a variety of mediums including painting sculpture and mixed media</p>
+              </div>
+            </div>
+          </div>
+          
         </section>
 
         <section className="section section-value">
           <h2>Your Child's Learning Journey</h2>
           <p>Wonder Kids Academy boasts modern and well-equipped facilities designed to provide your child with a safe and nuturing environment to learn, explore, and grw. With spacious classrooms, a playground, a library, an art room, a music room a science lab and a cafeteria, we offer a wide range of amenities that foster creativity and imagination</p>
-          <div className="section-intro__action-btns">
+          <div className="action-btns">
             <button className="btn btn-secondary"><i></i>Schedule a Tour today</button>
           </div>
         </section>
@@ -101,7 +109,7 @@ function App() {
         <section className="section section-enroll">
           <h2>Enroll Your Child Today</h2>
           <p>At Wonder Kids Academy, We believe that every child deserves a quality education in a safe and nurturing environment We are committed to providing a stimulating  and supportive learning experience that helps children develop academically, socially and emotionally</p>
-          <div className="section-intro__action-btns">
+          <div className="action-btns">
             <button className="btn btn-primary"><i></i>Enroll your child now</button>
           </div>
         </section>
@@ -113,7 +121,7 @@ function App() {
               <div className="content">
                 <h4>Schedule a tour</h4>
                 <p>We invite you to come and see our facilities and meet our teachers. Schedule a tour by contacting our office</p>
-                <div className="section-intro__action-btns">
+                <div className="action-btns">
                   <button className="btn btn-secondary"><i></i>Schedule a Tour today</button>
                 </div>
               </div>
@@ -125,7 +133,7 @@ function App() {
               <div className="content">
                 <h4>Submit an Application</h4>
                 <p>Once you have decided to enroll your child, please complete our online application form. You'll be asked to provide some basic information about your child, as well as any special needs or requirements</p>
-                <div className="section-intro__action-btns">
+                <div className="action-btns">
                   <button className="btn btn-primary"><i></i>Submit Application</button>
                 </div>
               </div>
@@ -173,7 +181,6 @@ function App() {
             <h4 className="testimonial__name">Emily Rodriguez</h4>
             <div className="testimonial__image"></div>
           </div>
-
           <div className="testimonial">
             <div className="testimonial__quote"></div>
             <div className="testimonial__stars"></div>
@@ -196,7 +203,7 @@ function App() {
         <section className="section section__parental-resource bg-gray">
           <h2>Parental Resource Center</h2>
           <p>At Wonder Kids Academy, we believe in supporting parents as partners in their child's education. That's why we have created a Parental Resource Center, a hub of information and resources to help you support your child's learning and development</p>
-          <div className="section-intro__action-btns">
+          <div className="action-btns">
             <input type="text" name="" id="" />
             <button className="btn btn-secondary"><i></i>Join our newsletter</button>
           </div>
