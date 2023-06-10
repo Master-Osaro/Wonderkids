@@ -99,25 +99,36 @@ function App() {
         </section>
 
         <section className="section section-value">
-          <h2>Your Child's Learning Journey</h2>
-          <p>Wonder Kids Academy boasts modern and well-equipped facilities designed to provide your child with a safe and nuturing environment to learn, explore, and grw. With spacious classrooms, a playground, a library, an art room, a music room a science lab and a cafeteria, we offer a wide range of amenities that foster creativity and imagination</p>
-          <div className="action-btns">
-            <button className="btn btn-secondary"><i></i>Schedule a Tour today</button>
+          <div className="section-inner">
+            <div className="content">
+              <h2>Your Child's Learning Journey</h2>
+              <p>Wonder Kids Academy boasts modern and well-equipped facilities designed to provide your child with a safe and nurturing environment to learn, explore, and grw. With spacious classrooms, a playground, a library, an art room, a music room a science lab and a cafeteria, we offer a wide range of amenities that foster creativity and imagination</p>
+              <div className="action-btns">
+                <button className="btn btn-secondary"><i></i>Schedule a Tour today</button>
+              </div>
+            </div>
+            <div className="image">
+              <div className="placeholder-1"></div>
+            </div>
+            
           </div>
+          
         </section>
 
         <section className="section section-enroll">
-          <h2>Enroll Your Child Today</h2>
-          <p>At Wonder Kids Academy, We believe that every child deserves a quality education in a safe and nurturing environment We are committed to providing a stimulating  and supportive learning experience that helps children develop academically, socially and emotionally</p>
-          <div className="action-btns">
-            <button className="btn btn-primary"><i></i>Enroll your child now</button>
-          </div>
+          <div className="section-inner">
+            <h2>Enroll Your Child Today</h2>
+              <p>At Wonder Kids Academy, We believe that every child deserves a quality education in a safe and nurturing environment We are committed to providing a stimulating  and supportive learning experience that helps children develop academically, socially and emotionally</p>
+              <div className="action-btns">
+                <button className="btn btn-primary"><i></i>Enroll your child now</button>
+              </div>
+        </div>
         </section>
 
         <section className="section section-process">
+          <div className="section-inner">
           <h2>Enrolling your child is a simple and straightforward process: </h2>
-
-            <div className='process'>
+          <div className='process'>
               <div className="content">
                 <h4>Schedule a tour</h4>
                 <p>We invite you to come and see our facilities and meet our teachers. Schedule a tour by contacting our office</p>
@@ -160,6 +171,7 @@ function App() {
               <div className="image"></div>
               <div className="number">4</div> 
             </div>
+          </div>
           
         </section>
 
