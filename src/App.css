@@ -16,11 +16,8 @@ body{
     background: var(--light-grey);
     font-family: var(--font-ubuntu);
     color: var(--black);
-    display: flex;
-    justify-content: center;
-    position: relative;
 }
-header, section{
+header, section, footer{
     display: flex;
     justify-content: center;
     position: relative;
@@ -31,11 +28,12 @@ header, section{
     max-width: 1200px;
 }
 
-main{
+/* main{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    width: 100%;
+} */
 
 h1{
     font-size: 2rem;
@@ -72,6 +70,15 @@ p {
     display: flex;
     gap: 1rem;
     justify-content: center;
+}
+
+/* ================== Email Input ==================== */
+.input-email{
+    padding: 1.2rem 0.8rem;
+    border-radius: 0.4rem;
+    font-weight: 700; 
+    border: none;
+    cursor: pointer;
 }
 
 
@@ -111,7 +118,7 @@ section{
 
 /* ================== Intro Section ==================== */
 
-.section-intro{
+.section-intro .section-inner{
     max-width: 800px;
     text-align: center;
     margin: 1rem;
@@ -195,25 +202,126 @@ section{
 
 /* ================== Enroll Section ==================== */
 
-.section-enroll{
-    max-width: 800px;
-    text-align: center;
-    margin: 1rem;
-}
-
 .section-enroll .section-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    max-width: 800px;
+    text-align: center;
+    margin: 1rem;
 }
 
 /* ================== Process Section ==================== */
+.section-process .section-inner{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .section-process h2{
     text-align: center;
+    margin-bottom: 4rem;
+    max-width: 400px;
+    line-height: 2.2rem;
+}
+.section-process h4{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.section-process .action-btns{
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+.section-process .number{
+    font-size: 300px;
+    position: absolute;
+    font-weight: 700;
+    top: -0.45rem;
+    z-index: -1;
+    opacity: 0.2;
+}
+.section-process .number.right{
+    right: -3rem;
+}
+.section-process .number.right.bottom{
+    bottom: 0;
+}
+.section-process .number.left{
+    left: -3rem;
 }
 
 .process{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+}
+
+
+/* ================== Testimonials Section ==================== */
+.section-testimonials{
+    width: 100%;
+    position: relative;
+}
+.section-testimonials .section-inner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 1rem;
+}
+.section-testimonials .section-inner h2{
+    grid-column: 1/-1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonial{
+    text-align: center;
+    padding: 2rem;
+    /* border: 1px solid var(--black); */
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    box-shadow: 2px 5px 10px 4px rgba(20, 20, 24, 0.2);
+    position: relative;
+}
+
+.testimonial__quote{
+    font-size: 64px;
+    font-weight: 700;
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+
+/* ================== Parental Resource Section ==================== */
+.section__parental-resource .section-inner{
+    max-width: 720px;
+}
+.section__parental-resource p{
+    margin-bottom: 2rem;
+}
+/* ================== FAQ Section ==================== */
+.faq-list{
+    padding: 1.5rem 0;
+    border: 1px solid var(--black);
+    border-radius: 1rem;
+}
+
+.faq__titlebar{
+    margin-bottom: 1.5rem;
+}
+.faq__titlebar:not(:last-child)::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid var(--black);
+}
+
+/* ================== Footer ==================== */
+footer .section-inner{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
 }

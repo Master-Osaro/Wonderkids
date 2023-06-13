@@ -2,6 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import FAQ_List from './components/FAQ_List'
+import readingImage from "./assets/reading.png"
+import laptopImage from "./assets/laptop.png"
+import handsUpImage from "./assets/hands_up.png"
+import standingImage from "./assets/standing.png"
 
 function App() {
 
@@ -136,11 +141,12 @@ function App() {
                   <button className="btn btn-secondary"><i></i>Schedule a Tour today</button>
                 </div>
               </div>
-              <div className="image"></div>
-              <div className="number">1</div> 
+              <div className="image"><img src={readingImage} alt="clay illustration of child studying with adult on laptop" /></div>
+              <div className="number left">1</div> 
             </div>
 
             <div className='process'>
+            <div className="image"><img src={handsUpImage} alt="clay illustration of child with hands up to answer a question" /></div>
               <div className="content">
                 <h4>Submit an Application</h4>
                 <p>Once you have decided to enroll your child, please complete our online application form. You'll be asked to provide some basic information about your child, as well as any special needs or requirements</p>
@@ -148,8 +154,7 @@ function App() {
                   <button className="btn btn-primary"><i></i>Submit Application</button>
                 </div>
               </div>
-              <div className="image"></div>
-              <div className="number">2</div> 
+              <div className="number right">2</div> 
             </div>
 
             <div className='process'>
@@ -158,104 +163,88 @@ function App() {
                 <p>After we receive your application fee, we will review your child's information and contact you with an admissions decision within 24 hours</p>
                 
               </div>
-              <div className="image"></div>
-              <div className="number">3</div> 
+              <div className="image"><img src={laptopImage} alt="clay illustration of child learning on laptop" /></div>
+              <div className="number left">3</div> 
             </div>
 
             <div className='process'>
+              <div className="image"><img src={standingImage} alt="clay illustration of girl standing" /></div>
               <div className="content">
                 <h4>Complete enrollment</h4>
                 <p>If your child is accepted, you will be asked to complete the enrolment process by submitting additional paperwork and paying the enrollment fee. We will provide you with all the necessary information and guidance to make the process as smooth as possible</p>
                 
               </div>
-              <div className="image"></div>
-              <div className="number">4</div> 
+              <div className="number right bottom">4</div> 
             </div>
           </div>
           
         </section>
 
         <section className="section section-testimonials">
+          <div className="section-inner">
           <h2>What parents are saying about us</h2>
 
-          <div className="testimonial">
-            <div className="testimonial__quote"></div>
-            <div className="testimonial__stars"></div>
-            <div className="testimonial__text">My daughter started attending Wonder Kids Academy this year, and we have been blown away by the quality attention and care he's receiving. The teachers are attentive, patient and skilled at working with young children </div>
-            <h4 className="testimonial__name">John Smith</h4>
-            <div className="testimonial__image"></div>
+            <div className="testimonial">
+              <div className="testimonial__quote">66</div>
+              <div className="testimonial__stars">STARS</div>
+              <div className="testimonial__text">My daughter started attending Wonder Kids Academy this year, and we have been blown away by the quality attention and care he's receiving. The teachers are attentive, patient and skilled at working with young children </div>
+              <h4 className="testimonial__name">John Smith</h4>
+              <div className="testimonial__image"></div>
+            </div>
+
+            <div className="testimonial">
+              <div className="testimonial__quote">66</div>
+              <div className="testimonial__stars">STARS</div>
+              <div className="testimonial__text">My son has been attending Wonder Kids Academy for two years, and we have been impresed  away by the quality attention and care he's receiving. The teachers are attentive, patient and skilled at working with young children </div>
+              <h4 className="testimonial__name">Emily Rodriguez</h4>
+              <div className="testimonial__image"></div>
+            </div>
+            <div className="testimonial">
+              <div className="testimonial__quote">66</div>
+              <div className="testimonial__stars">STARS</div>
+              <div className="testimonial__text">We have been sending our children to Wonder Kids Academy for the past three years, and we couldn't be happier with the experience. The curriculum is challenging and appropriate. And the teachers are knowledgeable and passionate about teaching </div>
+              <h4 className="testimonial__name">Emily Rodriguez</h4>
+              <div className="testimonial__image"></div>
+            </div>
+
+            <div className="testimonial">
+              <div className="testimonial__quote">66</div>
+              <div className="testimonial__stars">STARS</div>
+              <div className="testimonial__text">As a parent, I was nervous about sending my child to school for the first time, but Wonder Kids Academy has exceeded all our expectations. The staff are friendly supportive, and always available to answer our questions</div>
+              <h4 className="testimonial__name">David Lee</h4>
+              <div className="testimonial__image"></div>
+            </div>
           </div>
 
-          <div className="testimonial">
-            <div className="testimonial__quote"></div>
-            <div className="testimonial__stars"></div>
-            <div className="testimonial__text">My son has been attending Wonder Kids Academy for two years, and we have been impresed  away by the quality attention and care he's receiving. The teachers are attentive, patient and skilled at working with young children </div>
-            <h4 className="testimonial__name">Emily Rodriguez</h4>
-            <div className="testimonial__image"></div>
-          </div>
-          <div className="testimonial">
-            <div className="testimonial__quote"></div>
-            <div className="testimonial__stars"></div>
-            <div className="testimonial__text">We have been sending our children to Wonder Kids Academy for the past three years, and we couldn't be happier with the experience. The curriculum is challenging and appropriate. And the teachers are knowledgeable and passionate about teaching </div>
-            <h4 className="testimonial__name">Emily Rodriguez</h4>
-            <div className="testimonial__image"></div>
-          </div>
-
-          <div className="testimonial">
-            <div className="testimonial__quote"></div>
-            <div className="testimonial__stars"></div>
-            <div className="testimonial__text">As a parent, I was nervous about sending my child to school for the first time, but Wonder Kids Academy has exceeded all our expectations. The staff are friendly supportive, and always available to answer our questions</div>
-            <h4 className="testimonial__name">David Lee</h4>
-            <div className="testimonial__image"></div>
-          </div>
 
         </section>
 
 
-        <section className="section section__parental-resource bg-gray">
-          <h2>Parental Resource Center</h2>
-          <p>At Wonder Kids Academy, we believe in supporting parents as partners in their child's education. That's why we have created a Parental Resource Center, a hub of information and resources to help you support your child's learning and development</p>
-          <div className="action-btns">
-            <input type="text" name="" id="" />
-            <button className="btn btn-secondary"><i></i>Join our newsletter</button>
+        <section className="section section__parental-resource bg-grey">
+          <div className="section-inner">
+            <h2>Parental Resource Center</h2>
+            <p>At Wonder Kids Academy, we believe in supporting parents as partners in their child's education. That's why we have created a Parental Resource Center, a hub of information and resources to help you support your child's learning and development</p>
+            <div className="action-btns">
+              <input className='input-email' type="text" name="" id="" />
+              <button className="btn btn-primary"><i></i>Join our newsletter</button>
+            </div>
           </div>
+          
         </section>
 
-        <section className="section section__parental-resource bg-gray">
-          <h2>Frequently Asked Questions</h2>
-          <div className="faq-list">
-            <div className="faq">
-              <div className="faq__title">What is the age range for attending the kindergarten</div>
-              <div className="faq__content"></div>
-            </div>
-            <div className="faq">
-              <div className="faq__title">What is the hours of Operation for the kindergarten</div>
-              <div className="faq__content"></div>
-            </div>
-            <div className="faq">
-              <div className="faq__title">What is the curriculum like at the kindergarten</div>
-              <div className="faq__content"></div>
-            </div>
-            <div className="faq">
-              <div className="faq__title">Is the kindergarten accredited</div>
-              <div className="faq__content"></div>
-            </div>
-            <div className="faq">
-              <div className="faq__title">Is there a before and after school program available</div>
-              <div className="faq__content"></div>
-            </div>
-          </div>
-        </section>
+    <FAQ_List />
 
       </main>
       <footer>
-        <div className="logo">Wonder Kids Academy</div>
-        <ul className="nav-list">
-          <li><a href="#programs"><i></i>Programs</a></li>
-          <li><a href="#admissions"><i></i>Admissions</a></li>
-          <li><a href="#resources"><i></i>Resources</a></li>
-          <li><a href="#contact"><i></i>Contact</a></li>
-        </ul>
+        <div className="section-inner">
+          <div className="logo">Wonder Kids Academy</div>
+          <ul className="nav-list">
+            <li><a href="#programs"><i></i>Programs</a></li>
+            <li><a href="#admissions"><i></i>Admissions</a></li>
+            <li><a href="#resources"><i></i>Resources</a></li>
+            <li><a href="#contact"><i></i>Contact</a></li>
+          </ul>
+        </div>
         </footer>
     </>
   )
