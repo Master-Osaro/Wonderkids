@@ -16,10 +16,10 @@ function App() {
         <nav>
           <div className="logo">Wonder Kids Academy</div>
           <ul className="nav-list">
-            <li><a href="#programs"><i></i>Programs</a></li>
-            <li><a href="#admissions"><i></i>Admissions</a></li>
-            <li><a href="#resources"><i></i>Resources</a></li>
-            <li><a href="#contact"><i></i>Contact</a></li>
+            <li><a href="#programs"><i class="bi bi-map"></i>Programs</a></li>
+            <li><a href="#admissions"><i class="bi bi-arrows-move"></i>Admissions</a></li>
+            <li><a href="#resources"><i class="bi bi-journal-richtext"></i>Parent Resources</a></li>
+            <li><a href="#contact"><i class="bi bi-chat-square"></i>Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -29,8 +29,8 @@ function App() {
             <h1>Start your child's educational journey with us</h1>
             <p>Welcome to Wonder Kids Academy where children's curiousity and imagination are encouraged to blossom through a creative and engaging environment</p>
             <div className="action-btns">
-              <button className="btn btn-primary"><i></i>Enroll your child now</button>
-              <button className="btn btn-secondary"><i></i>Schedule a Tour today</button>
+              <button className="btn btn-primary"><i class="bi bi-arrow-right-circle"></i>Enroll your child now</button>
+              <button className="btn btn-secondary"><i class="bi bi-calendar2-event"></i>Schedule a Tour today</button>
             </div>
           </div>
         </section>
@@ -39,24 +39,24 @@ function App() {
           <div className="section-inner">
             <h2 className="feature-title">Discover the range of enriching programs and curriculum offered at our kindergarten</h2>
             <div className="feature-list">
-              <div className="feature-item">
-                <div className="feature-icon"></div>
+              <div className="feature-item puzzle">
+                <div className="feature-icon"><i className="bi bi-puzzle"></i></div>
                 <div className="feature-content">
                   <h3>Play-Based Learning</h3>
                   <p>Our play-based curriculum fosters children's natural curiousity, creativity and love of learning</p>
                 </div>
               </div>
 
-              <div className="feature-item">
-                <div className="feature-icon"></div>
+              <div className="feature-item journal">
+                <div className="feature-icon"><i className="bi bi-journal-text"></i></div>
                 <div className="feature-content">
                   <h3>Language and Literacy</h3>
                   <p>Our language and literacy program introduces children to the joys of reading, writing and communication</p>
                 </div>
               </div>
 
-              <div className="feature-item">
-                <div className="feature-icon"></div>
+              <div className="feature-item palette">
+                <div className="feature-icon"><i className="bi bi-palette"></i></div>
                 <div className="feature-content">
                   <h3>Arts and Culture</h3>
                   <p>We celebrate creativity by introducing children to various forms of art, music and culture from around the world</p>

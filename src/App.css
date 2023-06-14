@@ -56,6 +56,11 @@ p {
     font-weight: 700; 
     border: none;
     cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1.1rem;
+    font-family: inherit;
 }
 .btn-primary{
     background: var(--lime-green);
@@ -108,6 +113,7 @@ nav{
     text-decoration: none;
     color: var(--black);
     font-size: 1.05rem;
+    gap: 0.5rem;
 }
 
 section{
@@ -151,8 +157,21 @@ section{
     gap: 2rem;
 }
 
+.feature-item{
+    display: flex;
+    gap: 1rem;
+}
 .feature-item h3{
     margin-bottom: 1rem;
+}
+
+.feature-icon i{
+    font-size: 48px;
+}
+
+.journal i,
+.palette i{
+    font-size: 44px;
 }
 
 /* ================== Staff List Section ==================== */
@@ -240,7 +259,7 @@ section{
     font-weight: 700;
     top: -0.45rem;
     z-index: -1;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 .section-process .number.right{
     right: -3rem;
@@ -299,6 +318,9 @@ section{
 /* ================== Parental Resource Section ==================== */
 .section__parental-resource .section-inner{
     max-width: 720px;
+}
+.section__parental-resource .section-inner{
+    text-align: center;
 }
 .section__parental-resource p{
     margin-bottom: 2rem;
