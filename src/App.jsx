@@ -72,28 +72,28 @@ function App() {
             <h2>Meet the staff</h2>
             <div className="staff-list">
               <div className="staff">
-                <div className="staff__image"></div>
+                <div className="staff__image"><div></div></div>
                 <h4 className="staff__name">Ms. Sarah</h4>
                 <h5 className="staff__role">Director</h5>
                 <p className="staff__intro">Oversees the daily operations of the programme, ensures compliance with safety regulations and manage staff parent and child relationships</p>
               </div>
 
               <div className="staff">
-                <div className="staff__image"></div>
+                <div className="staff__image"><div></div></div>
                 <h4 className="staff__name">Ms. Lily</h4>
                 <h5 className="staff__role">Head Teacher</h5>
                 <p className="staff__intro">Leads the curriculum development and implementation, supervises the teaching staff, and conducts assessments to track student progress </p>
               </div>
 
               <div className="staff">
-                <div className="staff__image"></div>
+                <div className="staff__image"><div></div></div>
                 <h4 className="staff__name">Mr. John</h4>
                 <h5 className="staff__role">Physical Education Teacher</h5>
                 <p className="staff__intro">Designs and delivers physical education programs that promote gross motor skills, coordination, and fitness. Develops games and activities that encourage teamwork </p>
               </div>
 
               <div className="staff">
-                <div className="staff__image"></div>
+                <div className="staff__image"><div></div></div>
                 <h4 className="staff__name">Ms Anna</h4>
                 <h5 className="staff__role">Art Teacher</h5>
                 <p className="staff__intro">Inspires children to express their creative imagination through a variety of mediums including painting sculpture and mixed media</p>
@@ -185,31 +185,31 @@ function App() {
           <h2>What parents are saying about us</h2>
 
             <div className="testimonial">
-              <div className="testimonial__quote">66</div>
-              <div className="testimonial__stars">STARS</div>
+              <div className="testimonial__quote"><i class="bi bi-quote"></i></div>
+              <div className="testimonial__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
               <div className="testimonial__text">My daughter started attending Wonder Kids Academy this year, and we have been blown away by the quality attention and care he's receiving. The teachers are attentive, patient and skilled at working with young children </div>
               <h4 className="testimonial__name">John Smith</h4>
               <div className="testimonial__image"></div>
             </div>
 
             <div className="testimonial">
-              <div className="testimonial__quote">66</div>
-              <div className="testimonial__stars">STARS</div>
+              <div className="testimonial__quote"><i class="bi bi-quote"></i></div>
+              <div className="testimonial__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
               <div className="testimonial__text">My son has been attending Wonder Kids Academy for two years, and we have been impresed  away by the quality attention and care he's receiving. The teachers are attentive, patient and skilled at working with young children </div>
               <h4 className="testimonial__name">Emily Rodriguez</h4>
               <div className="testimonial__image"></div>
             </div>
             <div className="testimonial">
-              <div className="testimonial__quote">66</div>
-              <div className="testimonial__stars">STARS</div>
+              <div className="testimonial__quote"><i class="bi bi-quote"></i></div>
+              <div className="testimonial__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
               <div className="testimonial__text">We have been sending our children to Wonder Kids Academy for the past three years, and we couldn't be happier with the experience. The curriculum is challenging and appropriate. And the teachers are knowledgeable and passionate about teaching </div>
               <h4 className="testimonial__name">Emily Rodriguez</h4>
               <div className="testimonial__image"></div>
             </div>
 
             <div className="testimonial">
-              <div className="testimonial__quote">66</div>
-              <div className="testimonial__stars">STARS</div>
+              <div className="testimonial__quote"><i class="bi bi-quote"></i></div>
+              <div className="testimonial__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
               <div className="testimonial__text">As a parent, I was nervous about sending my child to school for the first time, but Wonder Kids Academy has exceeded all our expectations. The staff are friendly supportive, and always available to answer our questions</div>
               <h4 className="testimonial__name">David Lee</h4>
               <div className="testimonial__image"></div>
