@@ -71,6 +71,10 @@ p {
     border: 2px solid var(--grey);
     background: transparent;
 }
+.btn-white{
+    border: 2px solid var(--grey);
+    background: var(--light-grey);
+}
 
 .action-btns{
     display: flex;
@@ -183,7 +187,8 @@ section{
 }
 
 .staff-list{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1rem;
 }
 .staff{
@@ -246,6 +251,29 @@ section{
     border-radius: .5rem;
 }
 
+.image-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.image-grid img{
+    border-radius: 1rem;
+}
+
+.img-1{
+    grid-row: 1/span 1;
+    height: 100%;
+}
+.img-3{
+    height: 100%;
+}
+.img-2{
+    grid-row: 1/span 2;
+}
+/* ================== Enroll Section ==================== */
+.image-grid img{
+    width: 100%;
+}
 /* ================== Enroll Section ==================== */
 
 .section-enroll .section-inner {
@@ -253,9 +281,27 @@ section{
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    max-width: 800px;
+    /* max-width: 800px; */
     text-align: center;
     margin: 1rem;
+    background: url(./assets/home/darkbg/enroll_bg.jpg);
+    color: var(--light-grey);
+    padding: 4rem;
+    border-radius: 2rem;
+    position: relative;
+}
+.section-enroll .section-inner::after {
+    content: "";
+    background: var(--black);
+    background-size: cover;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    border-radius: 2rem;
+    z-index: -1;
 }
 
 /* ================== Process Section ==================== */
@@ -355,6 +401,19 @@ section{
     color: #FE9600;
     font-size: 1.6rem;
 }
+
+.testimonial__image{
+    display: flex;
+    justify-content: center;
+    
+}
+.testimonial__image div{
+    width: 64px;
+    height: 64px;
+    background: var(--black);
+    border-radius: 50%;
+}
+
 
 /* ================== Parental Resource Section ==================== */
 .section__parental-resource .section-inner{

@@ -8,6 +8,10 @@ import laptopImage from "./assets/laptop.png"
 import handsUpImage from "./assets/hands_up.png"
 import standingImage from "./assets/standing.png"
 
+import amenitiesImage from "./assets/home/amenities.jpg"
+import amenitiesImage2 from "./assets/home/amenities2.jpg"
+import kidsImage from "./assets/home/kids.jpg"
+
 function App() {
 
   return (
@@ -109,11 +113,15 @@ function App() {
               <h2>Your Child's Learning Journey</h2>
               <p>Wonder Kids Academy boasts modern and well-equipped facilities designed to provide your child with a safe and nurturing environment to learn, explore, and grw. With spacious classrooms, a playground, a library, an art room, a music room a science lab and a cafeteria, we offer a wide range of amenities that foster creativity and imagination</p>
               <div className="action-btns">
-                <button className="btn btn-secondary"><i></i>Schedule a Tour today</button>
+                <button className="btn btn-secondary"><i class="bi bi-calendar2-event"></i>Schedule a Tour today</button>
               </div>
             </div>
             <div className="image">
-              <div className="placeholder-1"></div>
+              <div className="image-grid">
+                <img src={kidsImage} alt="" className='img-1' />
+                <img src={amenitiesImage} alt="" className='img-2'/>
+                <img src={amenitiesImage2}  alt="" className='img-3'/>
+              </div>
             </div>
             
           </div>
@@ -125,7 +133,7 @@ function App() {
             <h2>Enroll Your Child Today</h2>
               <p>At Wonder Kids Academy, We believe that every child deserves a quality education in a safe and nurturing environment We are committed to providing a stimulating  and supportive learning experience that helps children develop academically, socially and emotionally</p>
               <div className="action-btns">
-                <button className="btn btn-primary"><i></i>Enroll your child now</button>
+                <button className="btn btn-white"><i class="bi bi-arrow-right-circle"></i>Enroll your child now</button>
               </div>
         </div>
         </section>
@@ -189,7 +197,7 @@ function App() {
               <div className="testimonial__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
               <div className="testimonial__text">My daughter started attending Wonder Kids Academy this year, and we have been blown away by the quality attention and care he's receiving. The teachers are attentive, patient and skilled at working with young children </div>
               <h4 className="testimonial__name">John Smith</h4>
-              <div className="testimonial__image"></div>
+              <div className="testimonial__image"><div></div></div>
             </div>
 
             <div className="testimonial">
@@ -197,14 +205,14 @@ function App() {
               <div className="testimonial__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
               <div className="testimonial__text">My son has been attending Wonder Kids Academy for two years, and we have been impresed  away by the quality attention and care he's receiving. The teachers are attentive, patient and skilled at working with young children </div>
               <h4 className="testimonial__name">Emily Rodriguez</h4>
-              <div className="testimonial__image"></div>
+              <div className="testimonial__image"><div></div></div>
             </div>
             <div className="testimonial">
               <div className="testimonial__quote"><i class="bi bi-quote"></i></div>
               <div className="testimonial__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
               <div className="testimonial__text">We have been sending our children to Wonder Kids Academy for the past three years, and we couldn't be happier with the experience. The curriculum is challenging and appropriate. And the teachers are knowledgeable and passionate about teaching </div>
               <h4 className="testimonial__name">Emily Rodriguez</h4>
-              <div className="testimonial__image"></div>
+              <div className="testimonial__image"><div></div></div>
             </div>
 
             <div className="testimonial">
@@ -212,7 +220,7 @@ function App() {
               <div className="testimonial__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
               <div className="testimonial__text">As a parent, I was nervous about sending my child to school for the first time, but Wonder Kids Academy has exceeded all our expectations. The staff are friendly supportive, and always available to answer our questions</div>
               <h4 className="testimonial__name">David Lee</h4>
-              <div className="testimonial__image"></div>
+              <div className="testimonial__image"><div></div></div>
             </div>
           </div>
 
@@ -225,8 +233,8 @@ function App() {
             <h2>Parental Resource Center</h2>
             <p>At Wonder Kids Academy, we believe in supporting parents as partners in their child's education. That's why we have created a Parental Resource Center, a hub of information and resources to help you support your child's learning and development</p>
             <div className="action-btns">
-              <input className='input-email' type="text" name="" id="" />
-              <button className="btn btn-primary"><i></i>Join our newsletter</button>
+              <input className='input-email' type="text" name="" id="" placeholder='Email Address'/>
+              <button className="btn btn-primary"><i class="bi bi-arrow-right-circle"></i>Join our newsletter</button>
             </div>
           </div>
           
