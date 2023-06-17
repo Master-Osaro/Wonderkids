@@ -22,11 +22,13 @@ header, section, footer{
     display: flex;
     justify-content: center;
     position: relative;
+    padding: 0 1rem;
 }
 
 .section-inner, nav{
     width: 100%;
     max-width: 1200px;
+    padding: 0 1rem;
 }
 
 /* main{
@@ -109,7 +111,7 @@ nav{
 .nav-list{
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     
 }
 .nav-list a{
@@ -426,19 +428,47 @@ section{
     margin-bottom: 2rem;
 }
 /* ================== FAQ Section ==================== */
+.section__faq .section-inner{
+    max-width: 720px;
+}
+.section__faq h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .faq-list{
-    padding: 1.5rem 0;
-    border: 1px solid var(--black);
+    border: 1px solid var(--grey-2);
     border-radius: 1rem;
 }
 
 .faq__titlebar{
-    margin-bottom: 1.5rem;
+    margin:  1rem 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
 }
-.faq__titlebar:not(:last-child)::after{
+
+
+.faq:not(:last-child)::after{
     content: "";
     display: block;
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.titlebar-group{
+    display: flex;
+    gap: 1rem;
+}
+
+.arrowdown-icon i ,
+.question-icon i {
+    color: var(--grey-2);
+    width: 64px;
+    height: 64px;
+}
+
+.arrowdown-icon i{
+    color: var(--black);
 }
 
 /* ================== Footer ==================== */

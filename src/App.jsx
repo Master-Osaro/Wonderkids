@@ -19,6 +19,7 @@ function App() {
       <header>
         <nav>
           <div className="logo">Wonder Kids Academy</div>
+          <i class="bi bi-list"></i>
           <ul className="nav-list">
             <li><a href="#programs"><i class="bi bi-map"></i>Programs</a></li>
             <li><a href="#admissions"><i class="bi bi-arrows-move"></i>Admissions</a></li>
@@ -146,7 +147,7 @@ function App() {
                 <h4>Schedule a tour</h4>
                 <p>We invite you to come and see our facilities and meet our teachers. Schedule a tour by contacting our office</p>
                 <div className="action-btns">
-                  <button className="btn btn-secondary"><i></i>Schedule a Tour today</button>
+                  <button className="btn btn-secondary"><i class="bi bi-calendar2-event"></i>Schedule a Tour today</button>
                 </div>
               </div>
               <div className="image"><img src={readingImage} alt="clay illustration of child studying with adult on laptop" /></div>
@@ -159,7 +160,7 @@ function App() {
                 <h4>Submit an Application</h4>
                 <p>Once you have decided to enroll your child, please complete our online application form. You'll be asked to provide some basic information about your child, as well as any special needs or requirements</p>
                 <div className="action-btns">
-                  <button className="btn btn-primary"><i></i>Submit Application</button>
+                  <button className="btn btn-primary"><i class="bi bi-arrow-right-circle"></i>Submit Application</button>
                 </div>
               </div>
               <div className="number right">2</div> 
