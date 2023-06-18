@@ -421,6 +421,38 @@ section{
     position: relative;
 }
 
+@media screen and (max-width: 778px) {
+    .process{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        position: relative;
+    }
+
+    .number{
+        display: none;
+    }
+
+    
+    .section-process .image{
+        width: 100%;
+        order: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+    .section-process .image img{
+        width: 100%;
+    }
+    .section-process .content{
+        order: 2;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+}
+
 
 /* ================== Testimonials Section ==================== */
 .section-testimonials{
