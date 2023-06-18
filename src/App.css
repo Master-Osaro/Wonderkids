@@ -31,13 +31,6 @@ header, section, footer{
     padding: 0 1rem;
 }
 
-/* main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-} */
-
 h1{
     font-size: 2rem;
     text-transform: capitalize;
@@ -77,6 +70,7 @@ p {
     border: 2px solid var(--grey);
     background: transparent;
 }
+
 .btn-white{
     border: 2px solid var(--grey);
     background: var(--light-grey);
