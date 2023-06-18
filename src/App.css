@@ -84,6 +84,16 @@ p {
     justify-content: center;
 }
 
+@media screen and (max-width: 778px) {
+    .btn {
+        text-align: center;
+        justify-content: center;
+    }
+    .action-btns{
+        flex-direction: column;
+    }
+}
+
 /* ================== Email Input ==================== */
 .input-email{
     padding: 1.2rem 0.8rem;
@@ -113,6 +123,22 @@ nav{
     display: flex;
     gap: 1.5rem;
     
+}
+
+.menu{
+    display: none;
+}
+
+@media screen and (max-width: 778px) {
+    .nav-list{
+        display: none;
+        
+    }
+    .menu{
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
 }
 .nav-list a{
     list-style: none;
@@ -150,11 +176,25 @@ section{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+
 .section-features .section-inner h2{
     font-size: 1.9rem;
     line-height: 2.4rem;
     text-transform: capitalize;
     padding-right: 2rem;
+}
+
+@media screen and (max-width: 778px) {
+    .section-features .section-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .section-features .section-inner h2{
+        font-size: 1.65rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
 }
 
 
@@ -227,6 +267,17 @@ section{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.section-features .section-inner h2{
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    text-transform: capitalize;
+    padding-right: 2rem;
+}
+
+
+
+
 .section-value .section-inner .content{
     display: flex;
     flex-direction: column;
@@ -237,10 +288,27 @@ section{
     justify-content: flex-start;
 }
 
-.section-value .section-inner{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+@media screen and (max-width: 778px) {
+    .section-value .section-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .section-value .section-inner h2{
+        font-size: 1.65rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .section-value .section-inner .image{
+        order: 2;
+        margin-bottom: 2rem;
+    }
+    .section-value .section-inner .content{
+        order: 3;
+    }
+
+    
 }
+
 
 /* .section-value .section-inner .image{
     

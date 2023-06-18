@@ -19,7 +19,7 @@ function App() {
       <header>
         <nav>
           <div className="logo">Wonder Kids Academy</div>
-          <i class="bi bi-list"></i>
+          <button class="menu" aria-label="menu" aria-expanded="false"><i class="bi bi-list"></i></button>
           <ul className="nav-list">
             <li><a href="#programs"><i class="bi bi-map"></i>Programs</a></li>
             <li><a href="#admissions"><i class="bi bi-arrows-move"></i>Admissions</a></li>
