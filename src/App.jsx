@@ -14,13 +14,15 @@ import kidsImage from "./assets/home/kids.jpg"
 
 function App() {
 
+  const [toggleNav, setToggleNav] = useState(false)
+
   return (
     <>
       <header>
         <nav>
           <div className="logo">Wonder Kids Academy</div>
-          <button class="menu" aria-label="menu" aria-expanded="false"><i class="bi bi-list"></i></button>
-          <ul className="nav-list">
+          <button class="menu" aria-label="menu" aria-expanded={toggleNav} onClick={()=>{setToggleNav(!toggleNav)}}><i className="bi bi-list"></i></button>
+          <ul className={`nav-list ${toggleNav?"":"hide"}`}>
             <li><a href="#programs"><i class="bi bi-map"></i>Programs</a></li>
             <li><a href="#admissions"><i class="bi bi-arrows-move"></i>Admissions</a></li>
             <li><a href="#resources"><i class="bi bi-journal-richtext"></i>Parent Resources</a></li>
