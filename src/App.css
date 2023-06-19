@@ -11,6 +11,7 @@
     --grey-2: #dbddf0;
     --light-grey: #F5F5FF;
     --black: #141418;
+    --dark-blue: #39393d;
 }
 
 body{
@@ -34,6 +35,9 @@ header, section, footer{
 h1{
     font-size: 2rem;
     text-transform: capitalize;
+}
+h1 span{
+    border-bottom: 4px dashed var(--pink);
 }
 
 p {
@@ -199,7 +203,27 @@ section{
 
 
 /* ================== Intro Section ==================== */
+.section-intro{
+    position: relative;
+}
 
+.section-intro::before {
+    position: absolute;
+    content: url(./assets/patternbgs/lflower_bottom.png);
+    bottom: 0rem;
+    left: -4rem;
+}
+
+.section-intro::after {
+    position: absolute;
+    content: url(./assets/patternbgs/rflower_bottom.png);
+    bottom: 0;
+    right: -7rem;
+}
+
+.section-intro::before, .section-intro::after {
+    display: block;
+}
 .section-intro .section-inner{
     max-width: 800px;
     text-align: center;
@@ -218,6 +242,7 @@ section{
 .section-features .section-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 5.5rem 0;
 }
 
 
@@ -240,6 +265,12 @@ section{
     }
 }
 
+.dashed-arrow{
+    width: 60px;
+    border-bottom: 4px dashed var(--pink);
+    margin-bottom: 1.3rem;
+
+}
 
 .feature-list{
     display: flex;
@@ -290,7 +321,8 @@ section{
     font-size: 1.1rem;
 }
 .staff__role{
-    font-size: 0.95rem;
+    font-size: 0.85rem;
+    color: var(--dark-blue);
 }
 
 .staff__image{

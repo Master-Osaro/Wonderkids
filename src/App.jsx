@@ -33,7 +33,7 @@ function App() {
       <main>
         <section className="section section-intro">
           <div className="section-inner">
-            <h1>Start your child's educational journey with us</h1>
+            <h1>Start your <span>child's educational</span> journey with us</h1>
             <p>Welcome to Wonder Kids Academy where children's curiousity and imagination are encouraged to blossom through a creative and engaging environment</p>
             <div className="action-btns">
               <button className="btn btn-primary"><i class="bi bi-arrow-right-circle"></i>Enroll your child now</button>
@@ -44,7 +44,11 @@ function App() {
 
         <section className="section section-features bg-grey">
           <div className="section-inner">
-            <h2 className="feature-title">Discover the range of enriching programs and curriculum offered at our kindergarten</h2>
+            <div className="feature-group">
+              <div className="dashed-arrow"></div>
+              <h2 className="feature-title">Discover the range of enriching programs and curriculum offered at our kindergarten</h2>
+            </div>
+            
             <div className="feature-list">
               <div className="feature-item puzzle">
                 <div className="feature-icon"><i className="bi bi-puzzle"></i></div>
