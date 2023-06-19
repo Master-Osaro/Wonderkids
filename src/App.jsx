@@ -45,7 +45,11 @@ function App() {
         <section className="section section-features bg-grey">
           <div className="section-inner">
             <div className="feature-group">
-              <div className="dashed-arrow"></div>
+              <div className="arrow-group">
+                <div className="dashed-arrow"></div>
+                <i class="bi bi-caret-right-fill"></i>
+              </div>
+              
               <h2 className="feature-title">Discover the range of enriching programs and curriculum offered at our kindergarten</h2>
             </div>
             
@@ -80,7 +84,7 @@ function App() {
 
         <section className="section section-staff">
           <div className="section-inner">
-            <h2>Meet the staff</h2>
+            <div className="h2__wrapper"><h2>Meet the staff</h2></div>
             <div className="staff-list">
               <div className="staff">
                 <div className="staff__image"><div></div></div>
@@ -197,7 +201,17 @@ function App() {
 
         <section className="section section-testimonials">
           <div className="section-inner">
-          <h2>What parents are saying about us</h2>
+          <div className="feature-group">
+            <div className="feature-group__wrapper">
+              <div className="arrow-group">
+                <div className="dashed-arrow"></div>
+                <i class="bi bi-chat"></i>
+              </div>
+              <h2>What parents are saying about us</h2>
+            </div>
+            
+          </div>
+          
 
             <div className="testimonial">
               <div className="testimonial__quote"><i class="bi bi-quote"></i></div>
